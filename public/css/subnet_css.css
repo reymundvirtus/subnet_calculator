@@ -55,3 +55,7 @@ tr:nth-child(odd) {
 .mov {
     margin-top: 25%;
 }
+
+img {
+    width: 100%;
+}
