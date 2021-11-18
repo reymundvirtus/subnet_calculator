@@ -152,7 +152,7 @@
 </body>
 
 <script>
-    /* Disable inspect element
+    // Disable inspect element
     document.onkeydown = function(e) {
         if(event.keyCode == 123) {
             return false;
@@ -169,7 +169,7 @@
         if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
             return false;
         }
-    }*/
+    }
 
     // To setup our csrf_token
     $.ajaxSetup({
