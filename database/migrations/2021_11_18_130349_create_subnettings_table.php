@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSubnetsTable extends Migration
+class CreateSubnettingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateSubnetsTable extends Migration
      */
     public function up()
     {
-        Schema::create('subnets', function (Blueprint $table) {
+        Schema::create('subnettings', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('network_id');
+            $table->string('octet1');
+            $table->string('octet2');
+            $table->string('octet3');
+            $table->string('octet4');
+            $table->string('no_of_subnet');
             $table->string('subnet_mask');
-            $table->string('host_id_range');
-            $table->string('no_of_usable_host');
-            $table->string('broadcast_id');
         });
     }
 
@@ -30,6 +31,6 @@ class CreateSubnetsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subnets');
+        Schema::dropIfExists('subnettings');
     }
 }

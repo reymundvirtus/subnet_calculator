@@ -1,6 +1,7 @@
 html, body {
-    background-color: #05445E;
+    background-color: #0e1011;
     font-family: Lato;
+    color: white;
 }
 .container {
     padding-top: 20px;
@@ -15,11 +16,12 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 20px;
+    border-spacing: 0;
 }
 
 td, th {
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     padding: 8px;
 }
 
@@ -28,7 +30,7 @@ tr:nth-child(odd) {
 }
 
 .back {
-    background-color: #2E8BC0;
+    background-color: #fdfdfd10;
     border-radius: 2%;
     padding-bottom: 2%;
 }
@@ -50,12 +52,35 @@ tr:nth-child(odd) {
 .about {
     text-decoration: none;
     color: white;
+    padding-top: 2%;
 }
-
-.mov {
-    margin-top: 25%;
-}
-
 img {
     width: 100%;
+}
+.modal-content {
+    color: black;
+    background-color: gray;
+}
+input[type="text"]{
+    background-color : rgba(247, 245, 245, 0.733); 
+}
+select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+@media only screen and (max-width: 990px) {
+    body {
+        text-align: center;
+        vertical-align: middle;
+    }
+    form {
+        display: inline-block;
+    }
+    .form-select {
+        width: 80px;
+    }
 }

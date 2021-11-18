@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'SubnetController@index');
-Route::get('/scratch', 'SubnetController@scratch');
+Route::post('/insert', 'SubnetController@ipAdd');
