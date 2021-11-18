@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{ URL::asset('css/subnet_css.css') }}" rel="stylesheet" type="text/css" >
+    <link href="/css/subnet_css.css" rel="stylesheet" type="text/css" >
     <title>Subnet Calculator</title>
 </head>
 <body oncontextmenu="return false">
@@ -22,6 +22,7 @@
         <center><h1>Subnet Calculator</h1></center>
             
         <form id="calculate" method="post">
+            @csrf
             <div class="row">
                 <div class="col row g-3 oct">
                 <h5 for="octet1"> Enter your IP Address:</h5>
