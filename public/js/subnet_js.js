@@ -34,7 +34,7 @@ function calculate(){
     let no_of_subnet = document.getElementById('no_of_subnet').value;
 
     // Validating input
-    if ((octet1 >= 0 && octet1 <= 255) && (octet2 >= 0 && octet2 <= 255) && (octet3 >= 0 && octet3 <= 255) && (octet4 >= 0 && octet4 <= 255)) {
+    if ((octet1 >= 0 && octet1 <= 255) && (octet2 >= 0 && octet2 <= 255) && (octet3 >= 0 && octet3 <= 255) && (octet4 >= 0 && octet4 <= 255) && (subnet_mask >= 1) && (no_of_subnet >= 1)) {
 
         let subnet = [1, 2, 4, 8, 16, 32, 64, 128, 256];
         let host = [256, 128, 64, 32, 16, 8, 4, 2, 1];
@@ -237,12 +237,6 @@ function calculate(){
                 range_last = parseInt(octet4_broadID) - 1;
                 document.getElementById('hostID').innerText += new_range_host + range_start + " - " + new_current_host + range_last + "\n\n";
             }
-        }
-        else if ((octet1 == "") && (octet2 == "") && (octet3 == "") && (octet4 == "")) {
-            alert("Fill out the required field!")
-        }
-        else {
-            alert("Invalid Input!!!");
         }
     }
 }

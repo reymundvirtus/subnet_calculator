@@ -42,8 +42,8 @@
                     </div>
                     <center>
                     <div class="select-subnet">
-                        <select id="subnet_mask" class="form-select form-select-sm" aria-label=".form-select-sm example" required>
-                            <option selected>Select Subnet Mask</option>
+                        <select required id="subnet_mask" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option value="" disabled selected>Subnet Mask</option>
                             <option value="24">/24</option>
                             <option value="25">/25</option>
                             <option value="26">/26</option>
@@ -125,29 +125,14 @@
     </div>
 
     <!-- Warning Modal -->
-    <div class="modal fade" id="inputIPAddress" tabindex="-1" aria-labelledby="inputIPAddress" aria-hidden="true">
+    <div class="modal fade" id="success" tabindex="-1" aria-labelledby="success" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content modal-content1">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h3>Error! You Need to Input your IP Address</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="invalidInput" tabindex="-1" aria-labelledby="invalidInput" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h3>Error! Invalid Input</h3>
+                    <h3>Success!</h3>
                 </div>
             </div>
         </div>
@@ -208,10 +193,7 @@
                 data: {octet1:octet1, octet2:octet2, octet3:octet3, octet4:octet4, no_of_subnet:no_of_subnet, subnet_mask:subnet_mask},
                 url: "insert",
                 success: function(data) {
-                    alert('Sucess');
-                },
-                error: function(data) {
-                    alert('Input');
+                    $("#success").modal("show");
                 },
             });
 
