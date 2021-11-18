@@ -239,4 +239,8 @@ function calculate(){
             }
         }
     }
+
+    else {
+        alert("Input the required field!");
+    }
 }
