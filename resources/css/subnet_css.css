@@ -50,8 +50,8 @@ tr:nth-child(odd) {
 .about {
     text-decoration: none;
     color: white;
+    padding-top: 2%;
 }
-
-.mov {
-    margin-top: 25%;
+.op::before {
+    content: "lo";
 }

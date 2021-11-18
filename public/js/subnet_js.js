@@ -212,6 +212,9 @@ function calculate(){
                 document.getElementById('hostID').innerText += new_range_host + range_start + " - " + new_current_host + range_last + "\n\n";
             }
         }
+        else if ((octet1 == "") && (octet2 == "") && (octet3 == "") && (octet4 == "")) {
+            alert("Fill out the required field!")
+        }
         else {
             alert("Invalid Input!!!");
         }
