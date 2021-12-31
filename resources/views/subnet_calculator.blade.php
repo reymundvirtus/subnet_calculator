@@ -142,7 +142,7 @@
     <center><br>
     <div>
             <p class="about">Copyright 2021<br>
-            <a href="https://reymundvirtus.pythonanywhere.com/" target="_blank" class="about">About the Developer</a></p>
+            <a href="https://reymundvirtus.herokuapp.com/" target="_blank" class="about">About the Developer</a></p>
     </div>
     </center>
 
