@@ -10,14 +10,19 @@
     <link href="/css/subnet_css.css" rel="stylesheet" type="text/css" >
     <title>Subnet Calculator</title>
 </head>
-<body oncontextmenu="return false">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<body oncontextmenu="return false" style="position: relative; ">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="">Subnet Calculator</a>
         </div>
     </nav>
 
     <br><br>
+    <div class="custom-shape-divider-bottom-1641899995">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
     <div class="container">
         <center><h1>Subnet Calculator</h1></center>
             
@@ -139,12 +144,11 @@
         </div>
     </div>
 
-    <center><br>
-    <div>
-            <p class="about">Copyright 2021<br>
-            <a href="https://reymundvirtus.herokuapp.com/" target="_blank" class="about">About the Developer</a></p>
+    <br>
+    <div class="pad">
+        <p class="about">Copyright 2021<br>
+        <a href="https://reymundvirtus.herokuapp.com/" target="_blank" class="about">About the Developer</a></p>
     </div>
-    </center>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
